@@ -1,7 +1,7 @@
 <html>
-  
 <head>
-  
+  <link href="https://unpkg.com/movement.css/movement.css" rel="stylesheet">
+  <link rel="icon" type="image/x-icon" href="/img/favicon.ico">
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -9,11 +9,9 @@
   <meta name="robots" content="index, follow">
   <meta name="viewport" content="minimal-ui, width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
   <meta name="apple-mobile-web-app-capable" content="yes">
-  <link rel="icon" href="https://cdn.discordapp.com/attachments/785182079196463145/911625776418422814/PioXRaV_512.png"/>
-  
 <script type="text/javascript"> var infolinks_pid = 3158245; var infolinks_wsid = 0; </script> <script type="text/javascript" src="//resources.infolinks.com/js/infolinks_main.js"> </script>
   
-  <title> BioBit v1.0 | Eat bits, get big. </title>
+  <title> BioBit | Eat bits, get big. </title>
 <style>
 
 #snackbar {
@@ -101,14 +99,28 @@
   </center>
       </div>
     </div>
-    <div id="overlays" style="display: none;">
+    <div data-m="bounce-down" id="overlays" style="display: none;">
       <div id="helloDialog">
         <div class="form-group">
-          <strong><h1>BioBit v1.0</h1></strong>
+          <img src="https://biobit.bigfatgrub.repl.co/img/title.png" height="65px" width="119px">
         </div>
     	<div id="leftPanel">
+        <span>Featured YouTuber: BigFatGrub</span>
+              <iframe src="https://www.youtube.com/embed/FzwDFVVc9Ss" data style="border:0px #ffffff none; border-radius: 5px;" name="YouTube" scrolling="no" frameborder="1" marginheight="0px" marginwidth="0px" height="230pxpx" width="320px" allowfullscreen></iframe>
+        <span>Featured Fan-Art By: Playerrdev</span>
+              <img src="/img/placeholder.png" style="border:0px #ffffff none; border-radius: 5px;" name="Fan-Art" scrolling="no" frameborder="1" marginheight="0px" marginwidth="0px" height="230pxpx" width="320px"></iframe>
       </div>
     	<div id="rightPanel">
+        <strong><span>News:</span></strong>
+        <br>
+        <strong><span>- Welcome To BioBit v1.0</span></strong>
+        <br>
+        <strong><span>- Improved Interface</span></strong>
+        <br>
+        <strong><span>- Added More Servers</span></strong>
+        <br>
+        <strong><span>--------------------------------------------</span></strong>
+        <br>
         <strong><span>Gameplay:</span></strong>
         The objective of the game is to grow a cell, a circular player-controlled object, by swallowing both pellets and smaller cells without being swallowed by bigger cells. It can be played in a deathmatch or between teams. There is no set goal; players restart when all of their cells are swallowed.
 
@@ -126,15 +138,20 @@ Players can split a part of their cell, flinging one of the divided cells at the
         <div class="form-group">
           <input id="nick" class="form-control" placeholder="This Is the Tale Of..." maxlength="25">
           <select id="gamemode" class="form-control" onchange="setserver(this.value);gtag('event', 'agariosetserver');" required="">
-                  <optgroup label="- - - - - - - - - - - - - - - -">
+<optgroup label="- - - - - - - - - - - - - - - -">
                   <optgroup label="Servers">
-                  <option value="puzzled-possible-target.glitch.me"> FFA </option>
-                  <option value="puzzled-possible-target.glitch.me"> Teams </option>
+<option value="biobit-ffa2.topdown.repl.co"> FFA </option>
+<option value="biobit-ffa2.topdown.repl.co"> FFA </option>
+<optgroup label="- - - - - - - - - - - - - - - -">
+<option value="biobit-teams.topdown.repl.co"> Teams </option>  <option value="biobit-teams2.topdown.repl.co"> Teams </option>
+<optgroup label="- - - - - - - - - - - - - - - -">
+<option value="biobit-arena.topdown.repl.co"> Arena </option>
+<option value="biobit-arena2.topdown.repl.co"> Arena </option>
                   </optgroup> </select>
         </div>
             <button id="play-btn" class="btn btn-play btn-primary btn-needs-server"> Play </button>
-            <button id="spectate-btn" onclick="spectate()" class="btn btn-warning btn-spectate btn-needs-server glyphicon glyphicon-eye-open"i style="box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;"> </button>
-          <button id="gallery-btn" onclick="openSkinsList()" class="btn btn-play btn-primary btn-needs-server btn-info"> Settings </button>
+            <button id="spectate-btn" onclick="spectate()" class="btn btn-warning btn-spectate btn-needs-server glyphicon glyphicon-eye-open"i style="box-shadow: rgba(0, 0, 0, 0.09) 0px 3px 12px; height: 32.9px; border-radius: 0px 5px 5px 0px; border: none; background: #292929;"> </button>
+          <button id="gallery-btn" onclick="openSkinsList()" class="btn btn-play btn-primary btn-needs-server btn-info" style="background: #2e1c91;"> Settings </button>
             <div id="instructions">
                 <hr>
               <center>
@@ -148,7 +165,9 @@ Players can split a part of their cell, flinging one of the divided cells at the
             </div>
             <hr>
             <div id="footer">
-              <button class="btn btn-success" onclick="window.open('https://about:blank/')" style="box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;"> More Games! </button>
+              <button class="btn btn-success" onclick="window.open('/games')" style="box-shadow: rgba(0, 0, 0, 0.09) 0px 3px 12px; background: #91b347; border: none;"> More Games! </button>
+							<button class="btn btn-success" onclick="window.open('https://discord.gg/wfKPTTBK')" style="box-shadow: rgba(0, 0, 0, 0.09) 0px 3px 12px; background: #738ADB; border: none;"> Discord! </button>
+
             </div>
       </div>
     </div>
@@ -160,9 +179,7 @@ Players can split a part of their cell, flinging one of the divided cells at the
     </div>
 
     <canvas id="canvas" width="800" height="600"> </canvas>
-    <input type="text" id="chat_textbox" placeholder="Press Enter to chat!" maxlength="100000">
+    <input type="text" id="chat_textbox" placeholder="Press Enter to chat!" maxlength="50">
 
 </body>
 </html>
-
-<div id="showmenubutton" onclick="mainmenu()" class="btn btn-primary" style="color: #00ff00; position: absolute; font-size: 10px; top: 5px; left: 666px; width: 199px; box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;"><strong>Press ESC to return to the main menu!</strong></div>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             
