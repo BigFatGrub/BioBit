@@ -43,7 +43,7 @@ serverPort = 3000
 serverBind = "0.0.0.0"
 serverTracker = 1
 serverGamemode = 0
-serverBots = 4
+serverBots = 2
 serverViewBaseX = 1920
 serverViewBaseY = 1080
 serverMinScale = 0.15
@@ -68,7 +68,7 @@ serverChatAscii = 0
 separateChatForTeams = 0
 serverName = "Blobit v1.0"
 serverWelcome1 = "Welcome to Blobit v1.0! "
-serverWelcome2 = "Hello There! "
+serverWelcome2 = "Press ESC to return to the menu! "
 serverWelcome3 = "Eat the pellets BECOME THE CHONKIEST!"
 clientBind = ""
 
