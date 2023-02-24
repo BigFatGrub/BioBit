@@ -13,6 +13,7 @@ body {
   position: fixed;
   color: dark;
 }
+
 input[type="checkbox"] {
   cursor: pointer;
 }
@@ -25,7 +26,6 @@ input[type="checkbox"] {
   position: absolute;
   left: 0;
   right: 0;
-
   top: 0;
   bottom: 0;
   background-color: rgba(0, 0, 0, 0.5);
@@ -35,7 +35,7 @@ input[type="checkbox"] {
   z-index: 100;
 }
 .connectbackup {
-  background-color: #5488f8; /* Blue */
+  background-color: #5488f8; /*Blue*/
   border: none;
   color: white;
   padding: 15px 32px;
@@ -46,31 +46,26 @@ input[type="checkbox"] {
   margin: 4px 2px;
   cursor: pointer;
 }
-#connecting-content {
-  width: 350px;
-  background-color: #fff;
-  margin: 100px auto;
-  border-radius: 15px;
-  padding: 5px 15px;
-}
+
 #title {
   padding: 10px;
   color: #00000;
 }
 #nick {
+  border: none;
+  margin: 0px;
   width: 100%;
-  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
 }
 #skin {
   width: 33%;
-  float: right;
 }
 #nick,
 #skin {
   display: inline;
 }
 #gamemode {
-  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
   margin-top: 5px;
   width: 100%;
 }
@@ -96,7 +91,7 @@ input[type="checkbox"] {
 
 #leftPanel {
   width: 350px;
-  height: 600px;
+  height: 525px;
   margin: 10px auto;
   border-radius: 5px;
   padding: 5px 15px 5px 15px;
@@ -116,8 +111,9 @@ input[type="checkbox"] {
 }
 
 #rightPanel {
+  font-size: 14.6px;
   width: 350px;
-  height: 600px;
+  height: 525px;
   margin: 10px auto;
   border-radius: 5px;
   padding: 5px 15px 5px 15px;
@@ -152,8 +148,7 @@ input[type="checkbox"] {
   left: 10px;
   width: 300px;
   font-family: Odibee Sans;
-  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
-    rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+box-shadow: rgba(0, 0, 0, 0.09) 0px 3px 12px;
 }
 #chat_textbox:focus {
   background: rgba(0, 0, 0, 0.5);
@@ -164,7 +159,9 @@ input[type="checkbox"] {
   margin-top: -10px;
 }
 #play-btn {
-  width: 85%;
+  border-radius: 5px 0px 0px 5px;
+  box-shadow: rgba(0, 0, 0, 0.09) 0px 3px 12px;
+  width: 87%;
   margin-bottom: 10px;
   background: #4b2ee7;
 }
@@ -177,12 +174,12 @@ input[type="checkbox"] {
 #play-btn,
 #spectate-button {
   border: none;
-  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+box-shadow: rgba(0, 0, 0, 0.09) 0px 3px 12px;
   display: inline;
 }
 #gallery-btn {
   border: none;
-  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+  box-shadow: rgba(0, 0, 0, 0.09) 0px 3px 12px;
   width: 100%;
   margin-bottom: 5px;
   background: #e72ec8;
